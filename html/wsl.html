@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="bey6,vscode wsl 开发环境配置">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="bey6,vscode wsl 开发环境配置" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <title>WSL 开发环境配置</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>WSL 开发环境配置</h1>
     <ol>
-        <li>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</li>
-        <li>之后打开公钥文件，复制其中内容</li>
-        <li>访问 <a href="https://github.com/settings/keys">SSH and GPG keys</a> 页面配置公钥</li>
+      <li>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</li>
+      <li>之后打开公钥文件，复制其中内容</li>
+      <li>
+        访问
+        <a href="https://github.com/settings/keys">SSH and GPG keys</a>
+        页面并配置公钥
+      </li>
+      <li>sudo apt update</li>
+      <li>sudo apt install nodejs</li>
+      <li>出错了，npm 安装失败了</li>
+      <li>
+        <p>
+          : not foundram Files/nodejs/npm: 3: : not foundram Files/nodejs/npm:
+          5: /mnt/f/Program Files/nodejs/npm: 6: Syntax error: word unexpected
+          (expecting "in")
+        </p>
+      </li>
+      <li>单独又执行了一遍 sudo apt install npm</li>
+      <li>依然报错</li>
     </ol>
-</body>
-
+  </body>
 </html>
